@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsIm5hbWUiOiJ1ZGluIGphbWFsIiwiZW1haWwiOiJqYW1hbGp1aWRuQGdtYWlsLmNvbSIsImlhdCI6MTcwMjIxMjY4MCwiZXhwIjoxNzAyMjEyNjk1fQ.LrnEuWCsJ8_dy-aW9g-UQut95S46ETISbKOvbj756Vo
+
+###
+
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "udin jamal",
+    "email": "jamaljuidn@gmail.com",
+    "password": "12345678",
+    "confirmPassword": "12345678"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "jamaljuidn@gmail.com",
+    "password": "12345678"
+}
+
+###
+
+GET http://localhost:5000/token
